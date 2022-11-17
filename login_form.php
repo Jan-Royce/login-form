@@ -21,14 +21,14 @@
         </p>
         <form action="/login-form/login.php" method="POST">
             <div class="user-input">
-                <label for="name"><img src="./img/1237089.png" alt="envelope"></label><input type="text" id="name" name="username" placeholder="Enter your username">
+                <label for="name"><img src="./img/1237089.png" alt="envelope"></label><input type="text" id="username" name="username" placeholder="Enter your username">
             </div>
-            <hr>
+            <hr class="input-line" for="username">
             <div class="user-input">
                 <!-- TODO show/hide pass -->
                 <label for="password"><img src="./img/newlock.png" alt="lock"/></label><input type="password" id="password" name="password" placeholder="Confirm a password"> <span><img src="./img/kindpng_3408991.png" alt="eye" ></span>
             </div class="user-input">
-            <hr>
+            <hr class="input-line" for="password">
 
             <div class="afterpass">
                 <input type="checkbox" id="checkbox" name="checkbox">
@@ -37,11 +37,12 @@
                 <a href="#">Forgot password?</a>
             </div>
 
-            <button class="button">Login Now</button>
+            <button id="submit_btn" class="button">Login Now</button>
         </form>
-        <nav class="bellow-button">
+        <nav class="below-button">
             <cite>Dont Have an account?</cite><a href="/login-form/register_form.php"> Signup now</a>
         </nav>
     </div>
+    <script src="./login.js"></script>
 </body>
 </html>
