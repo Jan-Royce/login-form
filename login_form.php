@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="cssmain.css">
 </head>
 <body>
     <div class="container" id="Login">
@@ -26,8 +26,9 @@
             <hr class="input-line" for="username">
             <div class="user-input">
                 <!-- TODO show/hide pass -->
-                <label for="password"><img src="./img/newlock.png" alt="lock"/></label><input type="password" id="password" name="password" placeholder="Confirm a password"> <span><img src="./img/kindpng_3408991.png" alt="eye" ></span>
-            </div class="user-input">
+                <label for="password"><img src="./img/newlock.png" alt="lock"/></label><input type="password" id="password" name="password" placeholder="Confirm a password"> 
+                <span><img id="eye_toggle" class="eye" src="./img/kindpng_3408991.png" alt="eye" ></span>
+            </div>
             <hr class="input-line" for="password">
 
             <div class="afterpass">
@@ -44,5 +45,14 @@
         </nav>
     </div>
     <script src="./login.js"></script>
+    <script>
+        var passwordEL = document.getElementById("password");
+        var togglepassword = document.getElementById("eye_toggle");
+
+        togglepassword.addEventListener("click", function(){
+            const type = passwordEL.getAttribute("type") === "password" ? "text": "password";
+            passwordEL.setAttribute("type", type)
+        });
+    </script>
 </body>
 </html>

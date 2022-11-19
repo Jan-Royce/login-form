@@ -12,7 +12,7 @@ document.getElementById('submit_btn').addEventListener('click', function(event) 
         el.style.borderColor = "#dfdede"; 
     });
     
-    let valid = true;
+    var valid = true;
     
     if (!usernameEl.checkValidity()) {
         document.querySelector('hr[for="username"]').style.borderColor = "red";

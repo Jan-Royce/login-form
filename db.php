@@ -1,5 +1,5 @@
 <?php
-    $servername = "127.0.0.1:3308";
+    $servername = "127.0.0.1:3306";
     $dbuser = "root";
     $dbpass = "";
     $dbname = "login-register";

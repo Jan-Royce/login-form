@@ -1,0 +1,102 @@
+
+body{
+    background: rgb(65,112,244);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.container{
+    width: 400px;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 40px auto;
+    background: rgb(255,255,255);
+}
+
+.user-input{
+    margin-bottom:3;
+    display: flex;
+    position: relative;
+}
+
+img{
+    width: 18px;   
+}
+
+h1{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.button{
+    background-color: rgb(65,112,244);
+    padding: 1em;
+    border-radius: 5px;
+    margin: 20px auto;
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(83, 125, 241);
+}
+
+input{
+    /* font-weight: bold; */
+    flex-grow: 1;
+    font-size: 16px;
+    border-style: none;
+    margin-left: 10px;
+    outline-width: 0;
+    outline: none;
+}
+
+label{
+    color: grey;
+}
+
+.letters2 {
+    text-decoration: underline;
+    text-decoration-color: rgb(65, 112, 244);
+}
+
+.afterpass a{
+    margin: flex;
+    margin-left: 100px;
+}
+
+.below-button{
+    margin-bottom: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: grey;
+}
+
+a{
+    color: rgb(65,112,244);
+    text-decoration: none;
+}
+
+hr{
+    border: 1px solid #dfdede;
+    margin-bottom: 1.5em;
+}
+
+form{
+    padding: 10px;
+}
+
+.error-text {
+    color: red;
+}
+
+cite{
+    cursor: default;
+}
+
+.eye{
+    cursor: pointer;
+}
