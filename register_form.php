@@ -80,10 +80,12 @@
             
             var ctr = 0;
             for (var i = 0; i < matchedCase.length; i++) {
-                if (new RegExp(matchedCase[i]).test(password) || password.length > 7) {
+                if (new RegExp(matchedCase[i]).test(password)) {
                     ctr++;
                 }
             }
+            
+            if(password.length > 7) ctr++;
             
             var color = "";
             var strength = "";
