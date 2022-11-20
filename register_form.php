@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="cssmain.css">
 </head>
 <body>
+    <?php 
+        session_start();
+        if(!empty($_SESSION['username'])) {
+            header("location: /login-form");
+        }
+    ?>
     <div class="container" id="Registration">
         <h1><span class="letters2">Re</span>gistration</h1>        
         <form id="register_form" action="/login-form/register.php" method="POST">

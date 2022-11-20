@@ -13,6 +13,7 @@
 
     if($result->num_rows == 1) {
         $_SESSION['error'] = "";
+        $_SESSION['username'] = ucfirst($username);
         header("location: /login-form");
         //TODO create session
     } else {

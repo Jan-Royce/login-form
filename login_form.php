@@ -17,6 +17,10 @@
                     echo $_SESSION['error'];
                     $_SESSION['error'] = "";
                 }
+                
+                if(!empty($_SESSION['username'])) {
+                    header("location: /login-form");
+                }
             ?>
         </p>
         <form action="/login-form/login.php" method="POST">
