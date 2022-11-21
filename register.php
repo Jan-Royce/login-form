@@ -6,8 +6,10 @@
     //NOTE: username must be unique
     //TODO encrypt password
     
+    $password = md5($_POST['password']);
+    
     $sql = "INSERT INTO users (username, email, password)
-            VALUES ('$_POST[username]', '$_POST[email]', '$_POST[password]')";
+            VALUES ('$_POST[username]', '$_POST[email]', '$password')";
  
     if ($conn->query($sql) === FALSE) {
         echo "Something went wrong.";
