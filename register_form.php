@@ -29,7 +29,7 @@
             <hr class="input-line" for="email">
             <div class="user-input">
                 <label for="pass-name"><img src="./img/newlock.png" alt="User"></label>
-                <input onkeyup="validatePassword(this.value);" type="password" id="password" name="password" placeholder="Create a password"  required>
+                <input type="password" id="password" name="password" placeholder="Create a password"  required>
                 <span style="font-size: 12px; position:static; margin-left:10px;" id="msg" class="msg"></span>
             </div>
             <hr class="input-line" for="password">
@@ -69,55 +69,6 @@
             form.addEventListener('submit', function (e) {
             e.preventDefault();
         });
-    </script>
-
-    <script>
-        function validatePassword(password) {
-            
-            if (password.length === 0) {
-                document.getElementById("msg").innerHTML = "";
-                return;
-            }
-            var matchedCase = new Array();
-            matchedCase.push("[A-Z]");
-            matchedCase.push("[0-9]");
-            matchedCase.push("[a-z]");
-
-            
-            var ctr = 0;
-            for (var i = 0; i < matchedCase.length; i++) {
-                if (new RegExp(matchedCase[i]).test(password)) {
-                    ctr++;
-                }
-            }
-            
-            if(password.length > 7) ctr++;
-            
-            var color = "";
-            var strength = "";
-            switch (ctr) {
-                case 0:
-                case 1:
-                case 2:
-                    strength = "Very Weak";
-                    color = "red";
-                    valid = false;
-                    document.querySelector('hr[for="password"]').style.borderColor = "red";
-                    break;
-                case 3:
-                    document.querySelector('hr[for="password"]').style.borderColor = "#dfdede";
-                    strength = "Medium";
-                    color = "orange";
-                    break;
-                case 4:
-                    document.querySelector('hr[for="password"]').style.borderColor = "#dfdede";
-                    strength = "Strong";
-                    color = "green";
-                    break;
-            }
-            document.getElementById("msg").innerHTML = strength;
-            document.getElementById("msg").style.color = color;
-        }
     </script>
 </body>
 </html>
