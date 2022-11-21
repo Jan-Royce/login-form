@@ -29,7 +29,6 @@
             </div>
             <hr class="input-line" for="username">
             <div class="user-input">
-                <!-- TODO show/hide pass -->
                 <label for="password"><img src="./img/newlock.png" alt="lock"/></label><input type="password" id="password" name="password" placeholder="Confirm a password"> 
                 <span><img id="eye_toggle" class="eye" src="./img/kindpng_3408991.png" alt="eye" ></span>
             </div>

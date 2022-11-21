@@ -6,8 +6,6 @@
     
     require getcwd() . '/db.php';
     
-    //TODO decrypt password
-    
     $sql = "SELECT * FROM users where username = '{$username}' and password = '{$password}'";
     $result = $conn->query($sql);
 

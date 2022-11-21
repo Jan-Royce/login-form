@@ -8,14 +8,21 @@
     <link rel="stylesheet" href="cssmain.css">
 </head>
 <body>
-    <?php 
-        session_start();
-        if(!empty($_SESSION['username'])) {
-            header("location: /login-form");
-        }
-    ?>
     <div class="container" id="Registration">
         <h1><span class="letters2">Re</span>gistration</h1>        
+        <p class="error-text">
+            <?php 
+                session_start();
+                if(!empty($_SESSION['username'])) {
+                    header("location: /login-form");
+                }
+                
+                if(!empty($_SESSION['error'])) {
+                    echo $_SESSION['error'];
+                    $_SESSION['error'] = "";
+                }
+            ?>
+        </p>
         <form id="register_form" action="/login-form/register.php" method="POST">
             <div class="user-input">
                 <img src="./img/User_png.png" alt="User">
