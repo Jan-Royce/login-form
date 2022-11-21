@@ -23,13 +23,13 @@
                 }
             ?>
         </p>
-        <form action="/login-form/login.php" method="POST">
+        <form id="login_form" action="/login-form/login.php" method="POST">
             <div class="user-input">
-                <label for="name"><img src="./img/1237089.png" alt="envelope"></label><input type="text" id="username" name="username" placeholder="Enter your username">
+                <label for="name"><img src="./img/1237089.png" alt="envelope"></label><input type="text" id="username" name="username" placeholder="Enter your username" required>
             </div>
             <hr class="input-line" for="username">
             <div class="user-input">
-                <label for="password"><img src="./img/newlock.png" alt="lock"/></label><input type="password" id="password" name="password" placeholder="Confirm a password"> 
+                <label for="password"><img src="./img/newlock.png" alt="lock"/></label><input type="password" id="password" name="password" placeholder="Confirm a password" required> 
                 <span><img id="eye_toggle" class="eye" src="./img/kindpng_3408991.png" alt="eye" ></span>
             </div>
             <hr class="input-line" for="password">
@@ -41,7 +41,7 @@
                 <a href="#">Forgot password?</a>
             </div>
 
-            <button id="submit_btn" class="button">Login Now</button>
+            <button id="submit_btn" type="button" class="button">Login Now</button>
         </form>
         <nav class="below-button">
             <cite>Dont Have an account?</cite><a href="/login-form/register_form.php"> Signup now</a>
