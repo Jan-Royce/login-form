@@ -23,7 +23,7 @@
                 }
             ?>
         </p>
-        <form id="register_form" action="/login-form/register.php" method="POST">
+        <form id="register_form" action="./register.php" method="POST">
             <div class="user-input">
                 <img src="./img/User_png.png" alt="User">
                 <input type="text" id="username" name="username" placeholder="Enter your username" required>

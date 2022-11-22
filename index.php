@@ -20,13 +20,13 @@
                 }
             ?>
             <section>
-                <h1><?php echo $username; ?> WELCOME TO AISAT</h1>
+                <h1><?php echo $username; ?> Welcome To AISAT</h1>
                 <hr>
                 <h2>LET YOUR DREAM TAKE FLIGHT</h2>
             </section>
             
             <form action="/login-form/logout.php" method="POST">
-                <button type="submit">Logout</button>
+                <button class="button-hover" type="submit">Logout</button>
             </form>
         </div>
     </div>
